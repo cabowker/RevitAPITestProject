@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>RevitAPITestProject</Name>
+    <Assembly>RevitAPITestProject.dll</Assembly>
+    <AddInId>
+      F985613C-631C-44CA-9461-5F445D28B082
+    </AddInId>
+    <FullClassName>RevitAPITestProject.HelloWorld</FullClassName>
+    <Text>Hello World</Text>
+    <Description>Hello World</Description>
+    <VendorId>ValorVDC</VendorId>
+    <VendorDescription>@valorVDC.com</VendorDescription>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+  </AddIn>
+    </AddIn>
+    <AddIn Type="Application">
+      <Name>ApplicationPlugin</Name>
+      <Assembly>RevitAPITestProject.dll</Assembly>
+      <AddInId>
+        12437C17-2431-44C2-BFA4-AA99A5CF0491
+      </AddInId>
+      <FullClassName>RevitAPITestProject.ExternalApplication</FullClassName>
+      <VendorId>ValorVDC</VendorId>
+      <VendorDescription>@ValorVDC.com</VendorDescription>
+    </AddIn>
+</RevitAddIns>

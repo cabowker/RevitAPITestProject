@@ -6,4 +6,18 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2025.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="RevitAPITestProject.addin">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="copy &quot;$(TargetDir)&quot;&quot;.&quot; &quot;$(AppData)\Autodesk\Revit\Addins\2025\&quot;" />
+    </Target>
+
 </Project>
